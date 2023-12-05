@@ -5,7 +5,7 @@ A Python script created to archive digital books from Yoel Geva's website.
 **The tool is NOT meant to encourage piracy or be used for any illegal 
 purpose.**
 
-## How It Works?
+## How It Works
 
 On the first part of the tool, it uses a breach in Yoel Geva's website in 
 order to access all of the files and the different books. First, it 
