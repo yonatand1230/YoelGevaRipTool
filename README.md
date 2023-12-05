@@ -2,7 +2,21 @@
 A Python script created to archive digital books from Yoel Geva's website.
 
 **The tool was created for educational purposes only.** \
-**The tool is NOT meant to encourage piracy or be used for any illegal purpose.**
+**The tool is NOT meant to encourage piracy or be used for any illegal 
+purpose.**
+
+## How It Works?
+
+On the first part of the tool, it uses a breach in Yoel Geva's website in 
+order to access all of the files and the different books. First, it 
+downloads every page of the book - both the `textlayers` and the 
+`html5-substrates` (which are the foreground and the background of every 
+page). Then, using the `PIL` module, it merges both files to a single PNG 
+picture, saved in the `pages` directory. 
+
+On its second part, the tool makes a PDF from all of the PNGs saved
+earlier. It's done using the `reportlab` module. This PDF is saved in the
+current working directory, and its name will be the Book ID.
 
 ## Setup
 1. Clone the repository by running the following command:
