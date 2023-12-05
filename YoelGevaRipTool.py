@@ -29,7 +29,7 @@ def background(page: int):
 if not os.path.exists('pages'): os.mkdir('pages')
 else:
     for f in os.listdir('pages'): os.remove(os.path.join('pages',f))
-"""
+
 try:
     for page in range(3,1500+1):
         # Get Remote Images
@@ -57,7 +57,7 @@ try:
             finalPage = bgImg
             finalPage.save(f'pages\\{page}.png')
 except Exception:
-    pass # means its finished downloading"""
+    pass # means its finished downloading
 
 ## PART 2. CONVERT TO PDF ##
 
